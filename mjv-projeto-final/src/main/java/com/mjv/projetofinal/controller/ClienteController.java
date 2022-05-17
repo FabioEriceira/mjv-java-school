@@ -34,8 +34,9 @@ public class ClienteController {
 		return clienteRepository.findAll();			// o repositorio delega, ou informa os clientes 
 	}
 
-//	@DeleteMapping("{id}")
-//	public void deletar(@PathVariable Integer id, @RequestBody Cliente cliente) {
-//		clienteRepository.delete(cliente);
-//    }
+	
+//	@DeleteMapping("/{id}")
+//	public void deletar(@PathVariable ("id") Integer id) {
+//		clienteRepository.deleteById(id);
+//	}
 }

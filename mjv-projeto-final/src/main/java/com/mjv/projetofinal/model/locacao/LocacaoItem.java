@@ -27,18 +27,4 @@ public class LocacaoItem {
 	private Integer qtdDiasLocacao;
 	 
 	private Double subtotal;
-	
-	//@Column(name="locacao_id")
-	//private Locacao locacaoId;
-	
-	// gerar aqui o método que vai para o pacote service
-	
-	//public Integer calculoTempo(LocacaoItem data){
-    //    Long dias = ChronoUnit.DAYS.between(dataRetirada, dataDevolucao);
-     //   return qtdDiasLocacao=Math.toIntExact(dias);
-    //}
-		
-	//@ManyToOne
-	//@Column(name="locacao_id")
-	//private Locacao locacaoId;
 }

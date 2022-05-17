@@ -37,4 +37,5 @@ public class Equipamento {
 	private Double valorLocacao;
 	
 	
+	
 }

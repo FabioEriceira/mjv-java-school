@@ -13,6 +13,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -26,9 +28,11 @@ public class Locacao {
 	private Integer id;
 	
 	@Column (name="data_retirada")
+	@DateTimeFormat(pattern="dd-MM-yyyy")
 	private LocalDateTime dataRetirada;
 	
 	@Column (name="data_devolucao")
+	@DateTimeFormat(pattern="dd-MM-yyyy")
 	private LocalDateTime dataDevolucao;
 	
 	@JoinColumn(name="cliente_id")
@@ -38,6 +42,6 @@ public class Locacao {
 	private Double valorFinal;
 	
 	@OneToMany(cascade = CascadeType.ALL)
-	@JoinColumn(name = "pedido_id")
+	@JoinColumn(name = "locacao_id")
 	private List<LocacaoItem> itens;
 }

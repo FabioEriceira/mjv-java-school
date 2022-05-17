@@ -32,8 +32,9 @@ public class EquipamentoController {
 		return equipamentoRepository.findAll();	 
 	}
 	
-//	@DeleteMapping("{id}")
-//	public void deletar(@PathVariable ("id") Integer id, @RequestBody Equipamento equipamento) {
-//		equipamentoRepository.delete(equipamento);
+	
+//	@DeleteMapping("/{id}")
+//	public void deletar(@PathVariable ("id") Integer id) {
+//		equipamentoRepository.deleteById(id);
 //	}
 }
