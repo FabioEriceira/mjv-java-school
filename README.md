@@ -94,7 +94,7 @@ Plano de aula, apresentações, exercícios aplicados na School de Java.
 | -------- | --------
 | Seg  | Noções de banco de dados, instalando o Postgre e MySQL, DBeaver, operações SQL [DDL / DML / DQL].
 | Ter  | Persistência de dados com JDBC, DAO, dinâmica de grupo  em aula sobre CRUD com JDBC.
-| Qua  | Apresentação dos grupos do exercício [Água Luz - Atração Notificação](https://github.com/digytal-code/java-school/tree/main/exercicios/03%20-%20agua-luz-atracao-notificacao)., Introdução a ORM, JPA, Hibernate.   
+| Qua  | Apresentação dos grupos do exercício [Água Luz - Atração Notificação]., Introdução a ORM, JPA, Hibernate.   
 | Qui  | Imersão ao Spring Framework, Spring Boot e Spring Data JPA.
 
 ##### Quarta semana
