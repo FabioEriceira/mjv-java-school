@@ -126,12 +126,12 @@ Plano de aula, apresentações, exercícios aplicados na School de Java.
 
 A cada aula conforme o Cronograma, exercícios serão aplicados em sala virtual e desafios, logo essa seção sofrerá alterações continuas.
 
-- [Data 11/04/22: Aula sobre versionamento de código (GIT - GITHUB/GITLAB/BITBUCKET)](https://glysns.gitbook.io/git-e-github/)
-- [Data 12/04/22: Aula sobre versionamento de código e uso de branchs (Uso de um repositório para mais de uma pessoa)](https://github.com/FabioEriceira/mjv-group-esporte)
-- [Data 13/04/22: Encerramento das aulas de GIT e instalação da IDE e primeiro programa compilado](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/aula-java/src)
-- [Data 14/04/22: Aula variáveis, String e tipos primitivos](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/aula-java/src/aula2)
+- [Data 11/04/22: Aula sobre versionamento de código (GIT - GITHUB/GITLAB/BITBUCKET)]
+- [Data 12/04/22: Aula sobre versionamento de código e uso de branchs (Uso de um repositório para mais de uma pessoa)]
+- [Data 13/04/22: Encerramento das aulas de GIT e instalação da IDE e primeiro programa compilado]
+- [Data 14/04/22: Aula variáveis, String e tipos primitivos]
 
-- [Data 18/04/22: Apresentação em grupo das Classes File, Path e Paths](https://github.com/FabioEriceira/mjv-group-esporte/tree/main/exercicios/exercicio1/src)
+- [Data 18/04/22: Apresentação em grupo das Classes File, Path e Paths]
 
 - [Data 19/04/22: Atributos e Construtores]
 
