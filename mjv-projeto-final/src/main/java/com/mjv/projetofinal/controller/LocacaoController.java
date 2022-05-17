@@ -26,6 +26,7 @@ public class LocacaoController {
 	@PostMapping
 	public void calcularLocacao(@RequestBody Locacao locacao) {
 		locacaoService.calcularLocacao(locacao);
+		
 	}
 	
 	@GetMapping								

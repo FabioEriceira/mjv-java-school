@@ -36,6 +36,4 @@ public class Equipamento {
 	@Column (name="valor_locacao")
 	private Double valorLocacao;
 	
-	
-	
 }
