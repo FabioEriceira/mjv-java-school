@@ -133,36 +133,30 @@ A cada aula conforme o Cronograma, exercícios serão aplicados em sala virtual 
 
 - [Data 18/04/22: Apresentação em grupo das Classes File, Path e Paths](https://github.com/FabioEriceira/mjv-group-esporte/tree/main/exercicios/exercicio1/src)
 
-- [Data 19/04/22: Atributos e Construtores](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/classes-objetos/paulo/classes/objetos)
+- [Data 19/04/22: Atributos e Construtores]
 
-- [Data 19/04/22: Criação do Open-Banking](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/open-banking)
+- [Data 19/04/22: Criação do Open-Banking]
 
-- [Data 20/04/22: Finalização do Open-Banking seguindo os requisitos](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/open-banking)
+- [Data 20/04/22: Finalização do Open-Banking seguindo os requisitos]
 
-- [Data 22/04/22: Água / Luz Notification Case 1](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/Agua.Luz%20-%20Notification%20-%20Case%201)
+- [Data 22/04/22: Água / Luz Notification Case 1]
 
-- [Data 25/04/22: Java Explorer(Repositório de Uso e Testes de Métodos)](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/java-explorer/src)
+- [Data 25/04/22: Java Explorer(Repositório de Uso e Testes de Métodos)]
 
-- [Data 26/04/22: Água / Luz - Atração Notification Case 2](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/Agua-Luz-Atra%C3%A7%C3%A3o)
+- [Data 26/04/22: Água / Luz - Atração Notification Case 2]
 
-- [Data 03/05/22: JUnit tests e Collections(List e Set)](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/java-explorer)
+- [Data 03/05/22: JUnit tests e Collections(List e Set)]
 
-- [Data 05/05/22: Água-Luz-Output](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/agua-luz-output)
+- [Data 05/05/22: Água-Luz-Output]
 
-- [Data 09/05/22: Água-Luz-Notificação](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/%C3%81gua-Luz-Notifica%C3%A7%C3%A3o)
+- [Data 09/05/22: Água-Luz-Notificação]
 
-- [Data 12/05/22: Primeiro Projeto Spring](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/PrimeiroProjetoSpring)
+- [Data 12/05/22: Primeiro Projeto Spring]
 
-- [Data 13/05/22: Conexão com JDBC no banco de dados](https://github.com/Paulo-Ultra/mjv-school-java/tree/main/pedido-fast)
+- [Data 13/05/22: Conexão com JDBC no banco de dados]
 
 
 
 ## Projeto Final
 
-[Repositório do Projeto Final](https://github.com/BrunoAMieli/mjv-projetoFinal)
-
-<p align="center">
-  <a href="https://www.mjvinnovation.com/pt-br" target="_blank">
-    <img align="center" width="150" src="https://scontent.flec4-1.fna.fbcdn.net/v/t1.6435-9/42600462_1696603547110502_9220737959181942784_n.png?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=HM9hhse_SrAAX-6l8Yz&_nc_ht=scontent.flec4-1.fna&oh=00_AT-L1XnaZPNk0kKu3lM6PVQBJKcEo7PJu3tztz6mmtV0WA&oe=627B3083" style="max-width:100%;">
-     </a>
-</p>
+[Repositório do Projeto Final](https://github.com/FabioEriceira/mjv-java-school/tree/main/mjv-projeto-final)
