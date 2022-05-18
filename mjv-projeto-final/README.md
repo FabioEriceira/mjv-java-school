@@ -48,15 +48,14 @@ Locação BIKE
 
 
 <div align="center">
-  <img src="[https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg](https://user-images.githubusercontent.com/96257601/169038141-a1a59e3d-42a4-42fa-a8a5-704b0f3bdee8.png)![UML - projeto](https://user-images.githubusercontent.com/96257601/169038228-6b61962e-f6b5-4eeb-9df2-1f43e0e57466.png)
-" width="200px" />
+  <img src="https://user-images.githubusercontent.com/96257601/169039572-bfceee9a-5e87-4bb5-b59e-9b885fe3996f.png" width="600px" />
  </div>
 
 <br>
 <h1>
 
 <div align="center">
-  <img src="[https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg](https://user-images.githubusercontent.com/96257601/169038141-a1a59e3d-42a4-42fa-a8a5-704b0f3bdee8.png)" width="200px" />
+  <img src="https://user-images.githubusercontent.com/96257601/169039716-142982bb-a8f3-46e4-a9cd-adc410274758.png" width="1600px" />
  </div>
 
 
