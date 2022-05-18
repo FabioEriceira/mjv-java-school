@@ -47,9 +47,6 @@ public class LocacaoService {
 		Integer qtDias = Math.toIntExact(ChronoUnit.DAYS.between(retirada, devolucao));
 		return qtDias;
 	}
-	
-	
-	
 }	
 	
 

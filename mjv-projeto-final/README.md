@@ -35,19 +35,48 @@ Locação BIKE
 
 ##### Apresentação
 
-1. Cadastro de cliente com seus endereços
-2. Cadastro de equipamentos (bikes)
+1. Cadastro de equipamentos (bikes)
+2. Cadastro de cliente com seus endereços
 3. Locação das bikes com seus pedidos
+<br>
+<br>
+#### 1. Cadastro de Equipamento (Bike)
 
-##### JSON Cadastros
-
-* Cadastrando a categoria BEBIDAS
+##### JSON Cadastro
+1.1. Cadastro de um equipamento (bike) no swagger
 
 ```
 {
-  "descricao": "BEBIDAS"
+  "tipoEquipamento": "MTB",
+  "fabricacao": "2019",
+  "marca": "CALOI",
+  "grupo": "SHIMANO TOURNEY",
+  "qtdDisponivel": 3,
+  "valorLocacao": 50
 }
 ```
+
+1.2. Fazer apresentação do RUD (Read, Update e Delete) desta inclusão no swaggar
+<br>
+![CRUD](https://www.google.com/url?sa=i&url=http%3A%2F%2Fdevfuria.com.br%2Fsql%2Fmysql-crud%2F&psig=AOvVaw0-PqZGEwOHbSSocOySGZOg&ust=1652957167811000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMDx4cTv6PcCFQAAAAAdAAAAABAD)
+<br>
+1.3. 
+
+
+```
+{
+  "tipoEquipamento": "MTB",
+  "fabricacao": "2019",
+  "marca": "CALOI",
+  "grupo": "SHIMANO TOURNEY",
+  "qtdDisponivel": 3,
+  "valorLocacao": 50
+}
+```
+
+
+
+
 
 * Cadastrando a categoria PIZZAS
 
