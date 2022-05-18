@@ -9,10 +9,6 @@
 # MJV Projeto Final
 </h1>
 
-
-- []()
-
-
 #### Repositório contendo o código fonte do projeto final da School.
 <h2>
 Locação BIKE 
