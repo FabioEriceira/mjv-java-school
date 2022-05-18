@@ -7,17 +7,52 @@
 </h1>
 <h1 align="center">
 # MJV Projeto Final
+</h1>
 
-#### Autor
 
-- [Fábio Ericeira](https://github.com/FabioEriceira)
-- [Projeto Final MJV School](https://github.com/FabioEriceira/mjv-java-school/tree/main/mjv-projeto-final)
+- []()
 
-Repositório contendo o código fonte do projeto final da School.
+
+#### Repositório contendo o código fonte do projeto final da School.
 <h2>
 Locação BIKE 
 </h2>
 <h1>
+
+### Obrigatoriedades:
+Apresentar a API sua aplicação devidamente documentada para uma demonstração de uma jornada de consumo dos recursos pertinentes a proposta do teu projeto.
+
+### Orientações: 
+Detalhar no README do projeto modelo de consumo de endpoint para facilitar a utilização da API:
+
+### Forma de entrega: 
+
+Disponibilizar o link do github do projeto bem descrito quanto às funcionalidades, implementações relevantes, participação dos membros da equipe, READEME com a jornada na plataforma e a API Rest documentada pelo Swagger em um ambiente Azure, Heroku ou OnPromisse.
+
+### Critérios de Aceite - Expectativa da Entrega: 
+
+1.	Apresentar a estrutura do projeto no github ou na IDE;
+
+2.	Apresentar a API da plataforma devidamente documentada e preferencialmente no Heroku;
+
+3.	Realizar uma demonstração de uma jornada de consumo dos recursos para conforme requisitados;
+
+<h1>
+
+#####  Alunos participantes (Ordem Alfabética) / Github
+
+- [Bruno Alessandro](https://github.com/BrunoAMieli)
+
+- [Fábio Ericeira](https://github.com/FabioEriceira)
+
+- [Gabriel Cruz](https://github.com/ProbBC)
+
+- [Paulo Ricardo](https://github.com/Paulo-Ultra)
+
+- [Renato Gonçalves](https://github.com/Renato-RJ)
+
+
+
 
 ##### Tecnologias
 
@@ -35,35 +70,36 @@ Locação BIKE
 
 ##### Apresentação
 
-1. Diagrama UML do projeto.
-2. 
+1. Diagrama UML (Linguagem de Modelagem) de Classes do projeto
+2. Diagrama ER (Entidade de Relacionamento) dos Bancos de dados
 3. Cadastro de Equipamentos (bikes)
 4. Cadastro de Cliente com seus Endereços
 5. Locação das Bikes com seus pedidos
+6. Pesquisas das informações nos bancos de dados.
+
 <br>
 <h1>
 
 #### 1. Diagrama UML (Unified Modeling Language) - Linguagem de Notação ou Linguagem de Modelagem Unificada do Projeto
-
-
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/96257601/169039572-bfceee9a-5e87-4bb5-b59e-9b885fe3996f.png" width="600px" />
- </div>
-
 <br>
-<h1>
-
 <div align="center">
   <img src="https://user-images.githubusercontent.com/96257601/169041303-50e84b75-1bd9-49dd-ad14-93d90c148398.png" width="1200px" />
  </div>
+<br>
+<h1>
 
+#### 2. Diagrama ER (Entidade de Relacionamento)
+<br>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/96257601/169039572-bfceee9a-5e87-4bb5-b59e-9b885fe3996f.png" width="500px" />
+ </div>
+<br>
+<h1>
 
-
-#### 1. Cadastro de Equipamento (Bike)
+#### 3. Cadastro de Equipamento (Bike)
 
 ##### JSON Cadastro
-1.1. Cadastro de um equipamento (bike) no swagger
+3.1. Cadastro de um equipamento (bike) no swagger
 
 ```
 {
@@ -76,11 +112,11 @@ Locação BIKE
 }
 ```
 
-1.2. Fazer apresentação do RUD (Read, Update e Delete) desta inclusão no swaggar
+3.2. Fazer apresentação do RUD (Read, Update e Delete) desta inclusão no swaggar
 <div align="center">
   <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
  </div>
-1.3. Incluir outros equipamentos via banco de dados.
+3.3. Incluir outros equipamentos via banco de dados.
 
 
 ```
@@ -95,10 +131,10 @@ VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',3,200);
 ```
 <h1>
 
-#### 2. Cadastro de Cliente com seus Endereços
+#### 4. Cadastro de Cliente com seus Endereços
 
 ##### JSON Cadastro
-1.1. Cadastro de um Cliente no Swagger
+4.1. Cadastro de um Cliente no Swagger
 
 ```
 {
@@ -116,15 +152,15 @@ VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',3,200);
 }
 ```
 
-1.2. Fazer apresentação do RUD (Read, Update e Delete) verificando que as tabelas de endereço e cliente estao ligadas via cascade, ou seja, o que fizer no banco de cliente fará no banco de endereço.
+4.2. Fazer apresentação do RUD (Read, Update e Delete) verificando que as tabelas de endereço e cliente estao ligadas via cascade, ou seja, o que fizer no banco de cliente fará no banco de endereço.
 <div align="center">
   <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
  </div>
 
 <br>
-1.3. Incluir via banco de dados clientes do boku no hero academy. 
+4.3. Incluir via banco de dados clientes do boku no hero academy. 
 
-1.3.1 - Primeiro os endereços, eles moram em São Luís :)
+4.3.1 - Primeiro os endereços, eles moram em São Luís :)
 
 ```
 INSERT INTO public.endereco (logradouro,cidade,estado,cep)
@@ -135,7 +171,7 @@ INSERT INTO public.endereco (logradouro,cidade,estado,cep)
 	VALUES ('Rua Apolo, 350, Jrdm Renascença ','São Luís ','MA','65075-680');
 ```
 
-1.3.2 - Agora os clientes ;)
+4.3.2 - Agora os clientes ;)
 
 ```
 INSERT INTO public.cliente (cpf,nome,telefone,endereco_id)
@@ -148,10 +184,10 @@ INSERT INTO public.cliente (cpf,nome,telefone,endereco_id)
 
 <h1>
 
-#### 3. Locação das Bikes com seus pedidos
+#### 5. Locação das Bikes com seus pedidos
 
 ##### JSON Cadastro
-3.1. Gerando uma locacação 
+5.1. Gerando uma locacação 
 
 OBS. Iremos informar:
  * A data da locação e devolução;
@@ -187,4 +223,9 @@ OBS. Iremos informar:
 1. A inclusão de uma locação;
 2. A inclusão de inclusão de itens;
 3. O decremento do estoque do item locado.
+
+<h1>
+
+#### 6. Pesquisas das informações nos bancos de dados.
+
 
