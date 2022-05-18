@@ -29,17 +29,35 @@ Locação BIKE
 
 ##### Outras ferramentas
 
-- ⚛️ **Eclipse** — IDE utilizada para estudo da linguagem Java
-- ⚛️ **Papyrus** — Ferramenta de edição gráfica para UML integrada ao Eclipse
+- **Eclipse** — IDE utilizada para estudo da linguagem Java
+- **Papyrus** — Ferramenta de edição gráfica para UML integrada ao Eclipse
 
 
 ##### Apresentação
 
-1. Cadastro de equipamentos (bikes)
-2. Cadastro de cliente com seus endereços
-3. Locação das bikes com seus pedidos
+1. Diagrama UML do projeto.
+2. 
+3. Cadastro de Equipamentos (bikes)
+4. Cadastro de Cliente com seus Endereços
+5. Locação das Bikes com seus pedidos
 <br>
-<br>
+<h1>
+
+#### 1. Diagrama UML (Unified Modeling Language) - Linguagem de Notação ou Linguagem de Modelagem Unificada do Projeto
+
+
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
+ </div>
+
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
+ </div>
+
+
+
 #### 1. Cadastro de Equipamento (Bike)
 
 ##### JSON Cadastro
@@ -60,98 +78,111 @@ Locação BIKE
 <div align="center">
   <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
  </div>
-1.3. 
+1.3. Incluir outros equipamentos via banco de dados.
 
+
+```
+INSERT INTO public.equipamento (tipo_equipamento,fabricacao,marca,grupo,qtd_disponivel,valor_locacao)
+VALUES ('MTB','2019','CALOI','SHIMANO TOURNEY',3,50);
+INSERT INTO public.equipamento (tipo_equipamento,fabricacao,marca,grupo,qtd_disponivel,valor_locacao)
+VALUES ('SPEED','2020','SPECIALIZED','SRAM GX EAGLE',2,200);
+INSERT INTO public.equipamento (tipo_equipamento,fabricacao,marca,grupo,qtd_disponivel,valor_locacao)
+VALUES ('SPEED','2020','OGGI','SHIMANO ALTUS',3,100);
+INSERT INTO public.equipamento (tipo_equipamento,fabricacao,marca,grupo,qtd_disponivel,valor_locacao)
+VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',3,200);
+```
+<h1>
+
+#### 2. Cadastro de Cliente com seus Endereços
+
+##### JSON Cadastro
+1.1. Cadastro de um Cliente no Swagger
 
 ```
 {
-  "tipoEquipamento": "MTB",
-  "fabricacao": "2019",
-  "marca": "CALOI",
-  "grupo": "SHIMANO TOURNEY",
-  "qtdDisponivel": 3,
-  "valorLocacao": 50
-}
-```
-
-
-
-
-
-* Cadastrando a categoria PIZZAS
-
-```
-{
-  "descricao": "PIZZAS"
-}
-```
-
-* Cadastrando o produto COCA COLA 2L
-
-```
-{
-  "descricao": "COCA COLA 2L",
-  "precoVenda": 7.75,
-  "saldo": 30,
-  "categoria": {
-    "id": 1
-  }
-  
-}
-```
-
-* Cadastrando o produto PIZZA 4 QUEIJOS GRANDE
-
-```
-{
-  "descricao": "PIZZA 4 QUEIJOS GRANDE",
-  "precoVenda": 32.00,
-  "saldo": 25,
-  "categoria": {
-    "id": 2
-  }
-  
-}
-```
-
-* Cadastrando um cliente
-
-```
-{
-  "cpf": "89789789987",
-  "nome": "GLEYSON SAMPAIO",
-  "whatsapp": 89787776,
-  "rg": "897878",
+  "id": 0,
+  "cpf": "43743743791",
+  "nome": "MANOEL DE MARIA",
+  "telefone": "98987456321",
   "endereco": {
-    "logradouro": "RUA DAS MARIAS",
-    "numero": "8767",
-    "bairro": "CENTRO"
+    "id": 0,
+    "logradouro": "RUA ANAPURUS, 20, JARDIM RENASCENCA II",
+    "cidade": "SAO LUIS",
+    "estado": "MA",
+    "cep": "65075450"
   }
 }
-
 ```
 
+1.2. Fazer apresentação do RUD (Read, Update e Delete) verificando que as tabelas de endereço e cliente estao ligadas via cascade, ou seja, o que fizer no banco de cliente fará no banco de endereço.
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
+ </div>
 
-* Gerando um pedido
+<br>
+1.3. Incluir via banco de dados clientes do boku no hero academy. 
+
+1.3.1 - Primeiro os endereços, eles moram em São Luís :)
+
+```
+INSERT INTO public.endereco (logradouro,cidade,estado,cep)
+	VALUES ('Praça São João, n.10, Centro ','São Luís ','MA','65010610');
+INSERT INTO public.endereco (logradouro,cidade,estado,cep)
+	VALUES ('Rua da Saavedra, n.01, Centro ','São Luís ','MA','65010620');
+INSERT INTO public.endereco (logradouro,cidade,estado,cep)
+	VALUES ('Rua Apolo, 350, Jrdm Renascença ','São Luís ','MA','65075-680');
+```
+
+1.3.2 - Agora os clientes ;)
+
+```
+INSERT INTO public.cliente (cpf,nome,telefone,endereco_id)
+	VALUES ('25280369063','KATSUKI BAKUGO','98912345678',11);
+INSERT INTO public.cliente (cpf,nome,telefone,endereco_id)
+	VALUES ('25280369063','SHOTO TODOROKI','98912345678',12);
+INSERT INTO public.cliente (cpf,nome,telefone,endereco_id)
+	VALUES ('25280369063','IZUKU MIDORIYA','98912345678',13);
+```
+
+<h1>
+
+#### 3. Locação das Bikes com seus pedidos
+
+##### JSON Cadastro
+3.1. Gerando uma locacação 
+
+OBS. Iremos informar:
+ * A data da locação e devolução;
+ * O código do cliente;
+ * O código do equipamento;
+ * O subtotal, que é o valor da locacao do equipamento.
+
+ A regra aqui é que: 
+ * o programa irá calcular a quantidade de dias através das datas informadas e jogar na quantidade de dias de locação e;
+ * Pegar o subtotal do(s) item(ns), multiplicar pela quantidade de dia(s), somar se tiver mais de um item e "subir" para o valor total e;
+ * Subtrair da quantidade do estoque do equipamento.(cada equipamento locado é unico, então fará uma subtração de uma unidade).
+
 
 ```
 {
-  "dataHora": "2022-05-17T12:22:25.334Z",
-  "clienteId": 1,
+  "id": 0,
+  "dataRetirada": "2022-05-18T11:47:35.201Z",
+  "dataDevolucao": "2022-05-20T11:47:35.201Z",
+  "clienteId": 13,
+  "valorFinal": 0,
   "itens": [
     {
-      "produtoId": 1,
-      "quantidade": 2,
-      "valorUnitario": 7.75,
-      "subtotal": 15.5
-    },
-    {
-      "produtoId": 2,
-      "quantidade": 1,
-      "valorUnitario": 32.0,
-      "subtotal": 32.0
+      "id": 0,
+      "equipamentoId": 16,
+      "qtdDiasLocacao": 0,
+      "subtotal": 200
     }
   ]
 }
 
 ```
+**Observar no banco de dados:** 
+1. A inclusão de uma locação;
+2. A inclusão de inclusão de itens;
+3. O decremento do estoque do item locado.
+
