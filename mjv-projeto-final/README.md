@@ -13,7 +13,6 @@
 <h2>
 Locação BIKE 
 </h2>
-<h1>
 
 ### Obrigatoriedades:
 Apresentar a API sua aplicação devidamente documentada para uma demonstração de uma jornada de consumo dos recursos pertinentes a proposta do teu projeto.
