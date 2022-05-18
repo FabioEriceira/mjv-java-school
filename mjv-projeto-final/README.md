@@ -55,7 +55,7 @@ Locação BIKE
 <h1>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/96257601/169039716-142982bb-a8f3-46e4-a9cd-adc410274758.png" width="1600px" />
+  <img src="https://user-images.githubusercontent.com/96257601/169041303-50e84b75-1bd9-49dd-ad14-93d90c148398.png" width="1200px" />
  </div>
 
 
