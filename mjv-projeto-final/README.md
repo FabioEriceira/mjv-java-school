@@ -58,7 +58,7 @@ Locação BIKE
 
 1.2. Fazer apresentação do RUD (Read, Update e Delete) desta inclusão no swaggar
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="300px" />
+  <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="150px" />
  </div>
 1.3. 
 
