@@ -57,9 +57,9 @@ Locação BIKE
 ```
 
 1.2. Fazer apresentação do RUD (Read, Update e Delete) desta inclusão no swaggar
-<br>
-![CRUD](https://www.google.com/url?sa=i&url=http%3A%2F%2Fdevfuria.com.br%2Fsql%2Fmysql-crud%2F&psig=AOvVaw0-PqZGEwOHbSSocOySGZOg&ust=1652957167811000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMDx4cTv6PcCFQAAAAAdAAAAABAD)
-<br>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="300px" />
+ </div>
 1.3. 
 
 
