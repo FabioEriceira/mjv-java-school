@@ -48,12 +48,14 @@ Locação BIKE
 
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
+  <img src="https://user-images.githubusercontent.com/96257601/169039572-bfceee9a-5e87-4bb5-b59e-9b885fe3996f.png" width="600px" />
  </div>
 
+<br>
+<h1>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
+  <img src="https://user-images.githubusercontent.com/96257601/169041303-50e84b75-1bd9-49dd-ad14-93d90c148398.png" width="1200px" />
  </div>
 
 
