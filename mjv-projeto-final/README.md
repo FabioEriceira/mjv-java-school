@@ -228,4 +228,42 @@ OBS. Iremos informar:
 
 #### 6. Pesquisas das informações nos bancos de dados.
 
+1. Se eu quiser saber de uma determinada locacao qual foi o valor total e qual foi o cliente?
 
+
+```
+select li.id, li.valor_final, c.nome 
+from locacao li 
+	inner join cliente c 
+	on li.cliente_id = c.id 
+where li.id = 1;	
+
+```
+
+2. E se eu quiser saber quais os equipamentos desta locacao, seus valores e data da retirada?
+
+```
+select li.id, li.valor_final, c.nome 
+from locacao li 
+	inner join cliente c 
+	on li.cliente_id = c.id 
+where li.id = 1;	
+
+```
+
+3. Será que tem como juntar mais informações? Tipo desta locacao, quais os equipamentos, quais os seus valores, quem locou, o seu endereço data de retirada e devolucao e valor final, será que é possível?
+
+```
+select  li.locacao_id, e.tipo_equipamento, e.grupo, li.subtotal, c.nome, e2.logradouro, l.data_retirada, l.data_devolucao , l.valor_final  
+from locacao_item li 
+	inner join locacao l 
+	on li.locacao_id = l.id 
+	inner join equipamento e 
+	on li.equipamento_id  = e.id 
+	inner join cliente c 
+	on l.cliente_id = c.id 
+	inner join endereco e2 
+	on c.endereco_id  = e2.id 
+where li.locacao_id  = 1;
+
+```
