@@ -1,4 +1,3 @@
-![Fluxo geral do projeto](https://user-images.githubusercontent.com/96257601/169337348-6b2cbacc-da1d-4ed5-89cb-e5ca78dd9a00.png)
 <h1 align="center">
 <br>
   <a href="https://www.mjvinnovation.com/pt-br/quem-somos/">
