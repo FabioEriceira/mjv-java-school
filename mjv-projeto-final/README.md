@@ -1,4 +1,3 @@
-![UML - projeto](https://user-images.githubusercontent.com/96257601/169406014-1f0ee67f-54f0-43a5-9674-c5dddf09463a.png)
 <h1 align="center">
 <br>
   <a href="https://www.mjvinnovation.com/pt-br/quem-somos/">
