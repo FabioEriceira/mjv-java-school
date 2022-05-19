@@ -1,4 +1,3 @@
-![Fluxo geral do projeto](https://user-images.githubusercontent.com/96257601/169309441-61a55293-2fcb-4929-a3d5-6c51e3fad7c8.png)
 <h1 align="center">
 <br>
   <a href="https://www.mjvinnovation.com/pt-br/quem-somos/">
@@ -58,26 +57,31 @@ Disponibilizar o link do github do projeto bem descrito quanto às funcionalidad
 
 ##### Apresentação
 
-1. O projeto
-2. Diagrama UML (Linguagem de Modelagem) de Classes do projeto
-3. Diagrama ER (Entidade de Relacionamento) dos Bancos de dados
-4. Cadastro de Equipamentos (bikes)
-5. Cadastro de Cliente com seus Endereços
-6. Locação das Bikes com seus pedidos
-7. Pesquisas das informações nos bancos de dados.
+* Idéia geral do projeto
+1. Diagrama UML (Linguagem de Modelagem) de Classes do projeto
+2. Diagrama ER (Entidade de Relacionamento) dos Bancos de dados
+3. Cadastro de Equipamentos (bikes)
+4. Cadastro de Cliente com seus Endereços
+5. Locação das Bikes com seus pedidos
+6. Pesquisas das informações nos bancos de dados.
 
 <br>
 <h1>
+
+## IDEIA GERAL DA LOCACAO DE BIKES
+
+Sabemos que um programa não nasce sem uma motivação e a jornada que nos foi passada é que devemos ser **bons usuários** para sermos **bons desenvolvedores**, então, tentando ser um bom usuário pensamos em uma idéia geral de locacao de bike.
+
+Achamos que, para um melhor entendimento, é importante mostar esta idéia geral em um mapa.
+
+Sabemos que para que esta idéia seja executada, precisaríamos de todos estes módulos: compras, cadastros, locacao, devolucao, manutenção, relatórios, dashboards, etc, mas, para atender ao desafio irei apresentar apenas o que está em amarelo.
+
+<br>
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/96257601/169309441-61a55293-2fcb-4929-a3d5-6c51e3fad7c8.png" />
  </div>
 <br>
-
-
-
-
-
 
 #### 1. Diagrama UML (Unified Modeling Language) - Linguagem de Notação ou Linguagem de Modelagem Unificada do Projeto
 <br>
