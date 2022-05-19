@@ -62,22 +62,22 @@ A jornada será então: Apresentar a estrutura do projeto de uma LOCAÇÃO DE BI
 
 ##### Apresentação conterá
 
-1. Diagrama UML (Linguagem de Modelagem) de Classes do projeto
-2. Diagrama ER (Entidade de Relacionamento) dos Bancos de dados
-3. Estrutura da aplicação na ide Eclipse padrão MVC (Model-View-Controller)
-4. Cadastro de Equipamento que são as bikes para locacao
-5. Cadastro de Cliente com seus Endereços
-6. Locação das Bikes com seus pedidos
+1. Diagrama UML (Linguagem de Modelagem) de Classes do projeto;
+2. Diagrama ER (Entidade de Relacionamento) dos Bancos de dados;
+3. Estrutura da aplicação na ide Eclipse padrão MVC (Model-View-Controller);
+4. Cadastro de Equipamento que são as bikes para locação;
+5. Cadastro de Cliente com seus Endereços;
+6. Locação das Bikes com seus pedidos;
 7. Pesquisas das informações nos bancos de dados.
 
 <br>
 <h1>
 
-## IDEIA GERAL DA LOCACAO DE BIKES
+## IDEIA GERAL DA LOCAÇÃO DE BIKES
 
-Sabemos que um programa não nasce sem uma motivação e a jornada que nos foi passada é que devemos ser **bons usuários** para sermos **bons desenvolvedores**, então, tentando ser um bom usuário pensamos em uma idéia geral de locacao de bike.
+Sabemos que um programa não nasce sem uma motivação e a jornada que nos foi passada é que devemos ser **bons usuários** para sermos **bons desenvolvedores**, então, tentando ser um bom usuário pensamos em uma idéia geral de locação de bike.
 
-Achamos que, para um melhor entendimento, é importante mostar esta idéia geral em um mapa, apesar de sabemos que para executar esta idéia, precisaríamos de todos estes módulos: compras, cadastros, locacao, devolucao, manutenção, relatórios, dashboards, etc, mas, para atender aos requisitos do desafio, foi feito os módulos destacados, que serão apresentados.
+Achamos que, para um melhor entendimento, é importante mostar esta idéia geral em um mapa, apesar de sabemos que para executar esta idéia, precisaríamos de todos estes módulos: compras, cadastros, locação, devolução, manutenção, relatórios, dashboards, etc, mas, para atender aos requisitos do desafio, foi feito os módulos destacados, que serão apresentados.
 
 ##### Expectativa
 
@@ -111,7 +111,7 @@ Achamos que, para um melhor entendimento, é importante mostar esta idéia geral
 <br>
 <h1>
 
-#### 3. ESTRUTUTRA DA APLICACAO - PADRÃO MVC (MODEL-VIEW-CONTROLLER)
+#### 3. ESTRUTURA DA APLICAÇÃO - PADRÃO MVC (MODEL-VIEW-CONTROLLER)
 <br>
 
 Algumas definições do padrão MVC
@@ -119,11 +119,11 @@ Algumas definições do padrão MVC
 * Controller - camada intermediária entre a camada de apresentação (swagger) e a camada de negócios (model);
 * enums - conjunto fixo de valores (SPEED e MTB);
 * model - classe de modelos de dados; 
-* dto - usado como parte da infra da aplicacao. Serve para especificar qual banco será usado;
+* dto - usado como parte da infra da aplicação. Serve para especificar qual banco será usado;
 * repository - Trabalha como uma porta de acesso a outra camada, algumas vezes com a dto;
 * LocacaoCustomRepository - usando para fazer as pesquisas no banco de dados através de nativeQuery;
 * NativeQuery - é um processo que tem como objetivo executar o código SQL em uma consulta;
-* Service - responsável pela lógica do negócio na aplicacao, é aqui é que quando ocorre a locacao, faço a diminuiçao da quantidade do item do estoque;
+* Service - responsável pela lógica do negócio na aplicação, é aqui é que quando ocorre a locação, faço a diminuição da quantidade do item do estoque.
 
 <br>
 
