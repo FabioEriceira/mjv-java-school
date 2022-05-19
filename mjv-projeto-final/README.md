@@ -1,3 +1,4 @@
+![Fluxo geral do projeto](https://user-images.githubusercontent.com/96257601/169337348-6b2cbacc-da1d-4ed5-89cb-e5ca78dd9a00.png)
 <h1 align="center">
 <br>
   <a href="https://www.mjvinnovation.com/pt-br/quem-somos/">
@@ -74,12 +75,12 @@ Sabemos que um programa não nasce sem uma motivação e a jornada que nos foi p
 
 Achamos que, para um melhor entendimento, é importante mostar esta idéia geral em um mapa.
 
-Sabemos que para que esta idéia seja executada, precisaríamos de todos estes módulos: compras, cadastros, locacao, devolucao, manutenção, relatórios, dashboards, etc, mas, para atender ao desafio irei apresentar apenas o que está em amarelo.
+Sabemos que para que esta idéia seja executada, precisaríamos de todos estes módulos: compras, cadastros, locacao, devolucao, estoque, manutenção, relatórios, dashboards, etc, mas, para atender ao desafio fizemos apenas o que está em amarelo. Este será apresentado.
 
 <br>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/96257601/169309441-61a55293-2fcb-4929-a3d5-6c51e3fad7c8.png" />
+  <img src="https://user-images.githubusercontent.com/96257601/169337348-6b2cbacc-da1d-4ed5-89cb-e5ca78dd9a00.png" />
  </div>
 <br>
 
