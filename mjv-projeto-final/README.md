@@ -1,3 +1,5 @@
+![Pesquisa_detalhes](https://user-images.githubusercontent.com/96257601/169363351-85ea64f4-d065-4d83-accc-d83068045f08.png)
+![Pesquisa_locacao](https://user-images.githubusercontent.com/96257601/169363376-8ad1eed4-b439-4e0d-a622-5c30dd173cf1.png)
 <h1 align="center">
 <br>
   <a href="https://www.mjvinnovation.com/pt-br/quem-somos/">
@@ -302,9 +304,15 @@ OBS. Iremos informar:
 
 #### 7. Pesquisas das informações nos bancos de dados.
 
+	
 
 
 1. Se eu quiser saber de uma determinada locacao qual foi o valor total e qual foi o cliente?
+	
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/96257601/169363351-85ea64f4-d065-4d83-accc-d83068045f08.png" width="200px" />
+</div>
+	
 
 
 ```
@@ -318,6 +326,13 @@ where li.id = 1;
 
 2. E se eu quiser saber quais os equipamentos desta locacao, seus valores e data da retirada?
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/96257601/169363376-8ad1eed4-b439-4e0d-a622-5c30dd173cf1.png" width="200px" />
+</div>
+
+	
+
+	
 ```
 select li.id, li.valor_final, c.nome 
 from locacao li 
