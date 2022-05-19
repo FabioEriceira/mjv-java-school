@@ -22,7 +22,7 @@ Detalhar no README do projeto modelo de consumo de endpoint para facilitar a uti
 
 ### Forma de entrega: 
 
-Disponibilizar o link do github do projeto bem descrito quanto às funcionalidades, implementações relevantes, participação dos membros da equipe, READEME com a jornada na plataforma e a API Rest documentada pelo Swagger em um ambiente Azure, Heroku ou OnPromisse.
+Disponibilizar o link do github do projeto bem descrito quanto às funcionalidades, implementações relevantes, participação dos membros da equipe, README com a jornada na plataforma e a API Rest documentada pelo Swagger em um ambiente Azure, Heroku ou OnPromisse.
 
 ### Critérios de Aceite - Expectativa da Entrega: 
 
@@ -30,12 +30,12 @@ Disponibilizar o link do github do projeto bem descrito quanto às funcionalidad
 
 2.	Apresentar a API da plataforma devidamente documentada e preferencialmente no Heroku;
 
-3.	Realizar uma demonstração de uma jornada de consumo dos recursos para conforme requisitados;
+3.	Realizar uma demonstração de uma jornada de consumo dos recursos conforme requisitados;
 
 <h2>
 O PROJETO
 </h2>
-Apresentar a estrutura do projeto de uma LOCAÇÃO DE BIKES em uma API devidamente documentada conforme requisitos
+A jornada será então: Apresentar a estrutura do projeto de uma LOCAÇÃO DE BIKES em uma API devidamente documentada conforme requisitos
 
 <br>
 
@@ -65,9 +65,10 @@ Apresentar a estrutura do projeto de uma LOCAÇÃO DE BIKES em uma API devidamen
 1. Diagrama UML (Linguagem de Modelagem) de Classes do projeto
 2. Diagrama ER (Entidade de Relacionamento) dos Bancos de dados
 3. Estrutura da aplicação na ide Eclipse padrão MVC (Model-View-Controller)
-4. Cadastro de Cliente com seus Endereços
-5. Locação das Bikes com seus pedidos
-6. Pesquisas das informações nos bancos de dados.
+4. Cadastro de Equipamento que são as bikes para locacao
+5. Cadastro de Cliente com seus Endereços
+6. Locação das Bikes com seus pedidos
+7. Pesquisas das informações nos bancos de dados.
 
 <br>
 <h1>
@@ -76,7 +77,7 @@ Apresentar a estrutura do projeto de uma LOCAÇÃO DE BIKES em uma API devidamen
 
 Sabemos que um programa não nasce sem uma motivação e a jornada que nos foi passada é que devemos ser **bons usuários** para sermos **bons desenvolvedores**, então, tentando ser um bom usuário pensamos em uma idéia geral de locacao de bike.
 
-Achamos que, para um melhor entendimento, é importante mostar esta idéia geral em um mapa, apesar de sabemos que para executar esta idéia, precisaríamos de todos estes módulos: compras, cadastros, locacao, devolucao, manutenção, relatórios, dashboards, etc, mas, para atender aos requisitos do desafio, fio feito os módulos destacados, que serão apresentados.
+Achamos que, para um melhor entendimento, é importante mostar esta idéia geral em um mapa, apesar de sabemos que para executar esta idéia, precisaríamos de todos estes módulos: compras, cadastros, locacao, devolucao, manutenção, relatórios, dashboards, etc, mas, para atender aos requisitos do desafio, foi feito os módulos destacados, que serão apresentados.
 
 ##### Expectativa
 
@@ -110,7 +111,7 @@ Achamos que, para um melhor entendimento, é importante mostar esta idéia geral
 <br>
 <h1>
 
-#### 3. ESTRUTUTRA DO PROGRAMA NA IDE ECLIPSE PADRÃO MVC (MODEL-VIEW-CONTROLLER)
+#### 3. ESTRUTUTRA DA APLICACAO - PADRÃO MVC (MODEL-VIEW-CONTROLLER)
 <br>
 
 Algumas definições do padrão MVC
@@ -168,11 +169,12 @@ Algumas definições do padrão MVC
 
 ```
 {
+  "id": 0,
   "tipoEquipamento": "MTB",
   "fabricacao": "2019",
   "marca": "CALOI",
   "grupo": "SHIMANO TOURNEY",
-  "qtdDisponivel": 3,
+  "qtdDisponivel": 5,
   "valorLocacao": 50
 }
 ```
@@ -187,13 +189,13 @@ Algumas definições do padrão MVC
 
 ```
 INSERT INTO public.equipamento (tipo_equipamento,fabricacao,marca,grupo,qtd_disponivel,valor_locacao)
-VALUES ('MTB','2019','CALOI','SHIMANO TOURNEY',3,50);
+VALUES ('MTB','2019','CALOI','SHIMANO TOURNEY',5,50);
 INSERT INTO public.equipamento (tipo_equipamento,fabricacao,marca,grupo,qtd_disponivel,valor_locacao)
-VALUES ('SPEED','2020','SPECIALIZED','SRAM GX EAGLE',2,200);
+VALUES ('SPEED','2020','SPECIALIZED','SRAM GX EAGLE',5,200);
 INSERT INTO public.equipamento (tipo_equipamento,fabricacao,marca,grupo,qtd_disponivel,valor_locacao)
-VALUES ('SPEED','2020','OGGI','SHIMANO ALTUS',3,100);
+VALUES ('SPEED','2020','OGGI','SHIMANO ALTUS',5,100);
 INSERT INTO public.equipamento (tipo_equipamento,fabricacao,marca,grupo,qtd_disponivel,valor_locacao)
-VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',3,200);
+VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',5,200);
 ```
 <h1>
 
@@ -317,23 +319,23 @@ OBS. Iremos informar:
 ```
 {
   "id": 0,
-  "dataRetirada": "2022-05-19T11:47:35.201Z",
-  "dataDevolucao": "2022-05-20T11:47:35.201Z",
+  "dataRetirada": "2022-05-19T20:24:24.426Z",
+  "dataDevolucao": "2022-05-20T20:24:24.426Z",
   "clienteId": 3,
   "valorFinal": 0,
   "itens": [
     {
       "id": 0,
-      "equipamentoId": 3,
+      "equipamentoId": 4,
       "qtdDiasLocacao": 0,
-      "subtotal": 200
+      "subtotal": 50
     },
     {
       "id": 0,
-      "equipamentoId": 4,
+      "equipamentoId": 5,
       "qtdDiasLocacao": 0,
-      "subtotal": 100
-    },
+      "subtotal": 200
+    }
   ]
 }
 
@@ -362,7 +364,7 @@ OBS. Iremos informar:
       "equipamentoId": 4,
       "qtdDiasLocacao": 0,
       "subtotal": 200
-    },
+    }
   ]
 }
 
@@ -380,43 +382,21 @@ OBS. Iremos informar:
 	
 
 
-7.1. Se eu quiser saber de uma determinada locacao qual foi o valor total e qual foi o cliente?
-
+7.1. Se eu quiser saber informação das locacões, com as data de retirada e devolucao e qual foi o valor total e qual cliente locou?
 <div align="center">
   <img src="https://user-images.githubusercontent.com/96257601/169363376-8ad1eed4-b439-4e0d-a622-5c30dd173cf1.png" width="1000px" />
 </div>
 
 
-	
-
-
-```
-select li.id, li.valor_final, c.nome 
-from locacao li 
-	inner join cliente c 
-	on li.cliente_id = c.id 
-where li.id = 1;	
-
-```
-
-7.2. E se eu quiser saber quais os equipamentos desta locacao, seus valores e data da retirada?
+7.2. E se eu quiser saber mais detalhes de determinada locacao, como: equipamentos desta locacao, seus valores e data da retirada?
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/96257601/169363351-85ea64f4-d065-4d83-accc-d83068045f08.png" width="1000px" />
 </div>
 
+<br>
 
-	
-```
-select li.id, li.valor_final, c.nome 
-from locacao li 
-	inner join cliente c 
-	on li.cliente_id = c.id 
-where li.id = 1;	
-
-```
-
-7.3. Será que tem como juntar mais informações? Tipo desta locacao, quais os equipamentos, quais os seus valores, quem locou, o seu endereço data de retirada e devolucao e valor final, será que é possível?
+Ainda criei no próprio banco de dados um scripts para mostra todas as informações da locacao, para brincar um pouco.
 
 ```
 select  li.locacao_id, e.tipo_equipamento, e.grupo, li.subtotal, c.nome, e2.logradouro, l.data_retirada, l.data_devolucao , l.valor_final  
@@ -429,6 +409,6 @@ from locacao_item li
 	on l.cliente_id = c.id 
 	inner join endereco e2 
 	on c.endereco_id  = e2.id 
-where li.locacao_id  = 1;
-
+where li.locacao_id  = 3;
 ```
+
