@@ -36,7 +36,9 @@ Disponibilizar o link do github do projeto bem descrito quanto às funcionalidad
 O PROJETO
 </h2>
 Apresentar a estrutura do projeto de uma LOCAÇÃO DE BIKES em uma API devidamente documentada conforme requisitos
+
 <br>
+
 #####  Alunos participantes (Ordem Alfabética) / Github
 
 - [Fábio Ericeira](https://github.com/FabioEriceira)
@@ -113,17 +115,16 @@ Achamos que, para um melhor entendimento, é importante mostar esta idéia geral
 
 Algumas definições do padrão MVC
 
-* Controller - camada intermediária entre a camada de apresentação (swagger) e a camada de negócios (model))
-* enums - conjunto fixo de valores (SPEED e MTB)
-* model - classe de modelos de dados 
-* dto (usado como parte da infra da aplicacao. Serve para especificar qual banco será usado)
-* repository - Trabalha como uma porta de acesso a outra camada, algumas vezes com a dto
-* LocacaoCustomRepository - usando para fazer as pesquisas no banco de dados através de nativeQuery
-* NativeQuery - é um processo que tem como objetivo executar o código SQL em uma consulta
-* Service - responsável pela lógica do negócio na aplicacao, é aqui é que quando ocorre a locacao, faço a diminuiçao da quantidade do item do estoque
+* Controller - camada intermediária entre a camada de apresentação (swagger) e a camada de negócios (model);
+* enums - conjunto fixo de valores (SPEED e MTB);
+* model - classe de modelos de dados; 
+* dto - usado como parte da infra da aplicacao. Serve para especificar qual banco será usado;
+* repository - Trabalha como uma porta de acesso a outra camada, algumas vezes com a dto;
+* LocacaoCustomRepository - usando para fazer as pesquisas no banco de dados através de nativeQuery;
+* NativeQuery - é um processo que tem como objetivo executar o código SQL em uma consulta;
+* Service - responsável pela lógica do negócio na aplicacao, é aqui é que quando ocorre a locacao, faço a diminuiçao da quantidade do item do estoque;
 
 <br>
-
 
 ### Estrutura
 ```
@@ -229,6 +230,20 @@ VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',3,200);
 ```
 {
   "id": 0,
+  "cpf": "25280369063",
+  "nome": "KATSUKI BAKUGO",
+  "telefone": "98912345678",
+  "endereco": {
+    "id": 0,
+    "logradouro": "Rua Anapurus, 20, Jardim RENASCENCA II",
+    "cidade": "SAO LUIS",
+    "estado": "MA",
+    "cep": "65075450"
+  }
+}
+
+{
+  "id": 0,
   "cpf": "49924023056",
   "nome": "SHOTO TODOROKI",
   "telefone": "98981427777",
@@ -281,12 +296,12 @@ OBS. Iremos informar:
   "id": 0,
   "dataRetirada": "2022-05-19T11:47:35.201Z",
   "dataDevolucao": "2022-05-20T11:47:35.201Z",
-  "clienteId": 1,
+  "clienteId": 2,
   "valorFinal": 0,
   "itens": [
     {
       "id": 0,
-      "equipamentoId": 1,
+      "equipamentoId": 2,
       "qtdDiasLocacao": 0,
       "subtotal": 50
     }
@@ -304,18 +319,18 @@ OBS. Iremos informar:
   "id": 0,
   "dataRetirada": "2022-05-19T11:47:35.201Z",
   "dataDevolucao": "2022-05-20T11:47:35.201Z",
-  "clienteId": 2,
+  "clienteId": 3,
   "valorFinal": 0,
   "itens": [
     {
       "id": 0,
-      "equipamentoId": 2,
+      "equipamentoId": 3,
       "qtdDiasLocacao": 0,
       "subtotal": 200
     },
     {
       "id": 0,
-      "equipamentoId": 3,
+      "equipamentoId": 4,
       "qtdDiasLocacao": 0,
       "subtotal": 100
     },
@@ -327,7 +342,7 @@ OBS. Iremos informar:
   "id": 0,
   "dataRetirada": "2022-05-19T11:47:35.201Z",
   "dataDevolucao": "2022-05-22T11:47:35.201Z",
-  "clienteId": 3,
+  "clienteId": 4,
   "valorFinal": 0,
   "itens": [
     {
