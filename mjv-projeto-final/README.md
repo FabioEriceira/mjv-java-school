@@ -62,7 +62,7 @@ Apresentar a estrutura do projeto de uma LOCAÇÃO DE BIKES em uma API devidamen
 
 1. Diagrama UML (Linguagem de Modelagem) de Classes do projeto
 2. Diagrama ER (Entidade de Relacionamento) dos Bancos de dados
-3. Cadastro de Equipamentos (bikes)
+3. Estrutura da aplicação na ide Eclipse padrão MVC (Model-View-Controller)
 4. Cadastro de Cliente com seus Endereços
 5. Locação das Bikes com seus pedidos
 6. Pesquisas das informações nos bancos de dados.
@@ -121,45 +121,49 @@ Algumas definições do padrão MVC
 * LocacaoCustomRepository - usando para fazer as pesquisas no banco de dados através de nativeQuery
 * NativeQuery - é um processo que tem como objetivo executar o código SQL em uma consulta
 * Service - responsável pela lógica do negócio na aplicacao, é aqui é que quando ocorre a locacao, faço a diminuiçao da quantidade do item do estoque
+
 <br>
+
+
 ### Estrutura
-      com.mjv.projetofinal
-        controller
-          ClienteController
-          EquipamentoController
-          LocacaoController
-      enums
-        TipoEquipamento
-      model
-        cadastro 
-          Cliente
-          Endereco
-          Equipamento
-        locacao 
-          dto
-            LocacaoListagem
-            LocacaoLIstagem2
-          Locacao
-          LocacaoItem
-      repository
-        ClienteRepository
-        EndereçoRepository
-        EquipamentoRepository
-        LocacaoRepository
-        LocacaoCustomRepository 
-        LocacaoItemRepository
-        LocacaoRepository
-      service
-        LocacaoService
-      MjvProjetoFinalApplication.java
+```
+ com.mjv.projetofinal
+   controller
+     ClienteController
+     EquipamentoController
+     LocacaoController
+ enums
+   TipoEquipamento
+ model
+   cadastro 
+     Cliente
+     Endereco
+     Equipamento
+   locacao 
+     dto
+       LocacaoListagem
+       LocacaoLIstagem2
+     Locacao
+     LocacaoItem
+ repository
+   ClienteRepository
+   EndereçoRepository
+   EquipamentoRepository
+   LocacaoRepository
+   LocacaoCustomRepository 
+   LocacaoItemRepository
+   LocacaoRepository
+ service
+   LocacaoService
+ MjvProjetoFinalApplication.java
+```
 
+## Cadastros
 
-
-
-#### 3. Cadastro de Equipamento (Bike)
+#### 4. Cadastro de Equipamento (Bike)
 
 ##### JSON Cadastro
-3.1. Cadastro de um equipamento (bike) no swagger
+4.1. Cadastro de um equipamento (bike) no swagger
 
 ```
 {
@@ -172,13 +176,13 @@ Algumas definições do padrão MVC
 }
 ```
 
-3.2. Fazer apresentação do RUD (Read, Update e Delete) desta inclusão no swaggar
+4.2. Fazer apresentação do RUD (Read, Update e Delete) desta inclusão no swaggar
 <div align="center">
   <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
  </div>
  <br>
-3.3. Incluir outros equipamentos via SQL no banco de dados de equipamento.
 
+4.3. Incluir outros equipamentos via SQL no banco de dados de equipamento.
 
 ```
 INSERT INTO public.equipamento (tipo_equipamento,fabricacao,marca,grupo,qtd_disponivel,valor_locacao)
@@ -192,10 +196,10 @@ VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',3,200);
 ```
 <h1>
 
-#### 4. Cadastro de Cliente com seus Endereços
+#### 5. Cadastro de Cliente com seus Endereços
 
 ##### JSON Cadastro
-4.1. Cadastro de um Cliente no Swagger
+5.1. Cadastro de um Cliente no Swagger
 
 ```
 {
@@ -212,6 +216,17 @@ VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',3,200);
   }
 }
 
+```
+
+5.2. Fazer apresentação do RUD (Read, Update e Delete) verificando que as tabelas de endereço e cliente estao ligadas via cascade, ou seja, o que fizer no banco de cliente fará no banco de endereço.
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
+ </div>
+
+<br>
+5.3. Incluir outros clientes com seus endereços
+
+```
 {
   "id": 0,
   "cpf": "49924023056",
@@ -242,21 +257,11 @@ VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',3,200);
 
 ```
 
-4.2. Fazer apresentação do RUD (Read, Update e Delete) verificando que as tabelas de endereço e cliente estao ligadas via cascade, ou seja, o que fizer no banco de cliente fará no banco de endereço.
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
- </div>
-
-<br>
-4.3. Incluir via banco de dados clientes do boku no hero academy. 
-
 
 <h1>
 
-#### 5. Locação das Bikes com seus pedidos
-
-##### JSON Cadastro
-5.1. Gerando uma locacação 
+#### 6. Locação das Bikes com seus pedidos
+6.1. Gerando uma locacação 
 
 OBS. Iremos informar:
  * A data da locação e devolução;
@@ -266,10 +271,10 @@ OBS. Iremos informar:
 
  A regra aqui é que: 
  * o programa irá calcular a quantidade de dias através das datas informadas e jogar na quantidade de dias de locação e;
- * Pegar o subtotal do(s) item(ns), multiplicar pela quantidade de dia(s), somar se tiver mais de um item e "subir" para o valor total e;
+ * Pegar o subtotal do(s) item(ns), multiplicar pela quantidade de dia(s), se tiver mais de um item, somar e "subir" para o valor total e;
  * Subtrair da quantidade do estoque do equipamento.(cada equipamento locado é unico, então fará uma subtração de uma unidade).
 
-
+##### JSON Cadastro
 ```
 {
   "id": 0,
@@ -295,7 +300,9 @@ OBS. Iremos informar:
 
 <h1>
 
-#### 6. Pesquisas das informações nos bancos de dados.
+#### 7. Pesquisas das informações nos bancos de dados.
+
+
 
 1. Se eu quiser saber de uma determinada locacao qual foi o valor total e qual foi o cliente?
 
