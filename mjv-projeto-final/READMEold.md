@@ -32,6 +32,8 @@ Disponibilizar o link do github do projeto bem descrito quanto às funcionalidad
 
 3.	Realizar uma demonstração de uma jornada de consumo dos recursos para conforme requisitados;
 
+<h1>
+
 <h2>
 O PROJETO
 </h2>
@@ -74,23 +76,19 @@ Apresentar a estrutura do projeto de uma LOCAÇÃO DE BIKES em uma API devidamen
 
 Sabemos que um programa não nasce sem uma motivação e a jornada que nos foi passada é que devemos ser **bons usuários** para sermos **bons desenvolvedores**, então, tentando ser um bom usuário pensamos em uma idéia geral de locacao de bike.
 
-Achamos que, para um melhor entendimento, é importante mostar esta idéia geral em um mapa, apesar de sabemos que para executar esta idéia, precisaríamos de todos estes módulos: compras, cadastros, locacao, devolucao, manutenção, relatórios, dashboards, etc, mas, para atender aos requisitos do desafio, fio feito os módulos destacados, que serão apresentados.
-
-##### Expectativa
-
-1. Executar uma locação de uma ou mais bikes para um cliente e, ao locar diminuir no estoque a bike locada.
-2. Verificar estas informações nos bancos de dados.
-3. Fazer uma consulta referente a estas informações.
-
+Achamos que, para um melhor entendimento, é importante mostar esta idéia geral em um mapa, apesar de sabemos que para executar esta idéia, precisaríamos de todos estes módulos: compras, cadastros, locacao, devolucao, manutenção, relatórios, dashboards, etc, mas, para atender ao desafio irei apresentar apenas o que está em amarelo.
 
 <br>
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/96257601/169337348-6b2cbacc-da1d-4ed5-89cb-e5ca78dd9a00.png" />
+  <img src="https://user-images.githubusercontent.com/96257601/169309441-61a55293-2fcb-4929-a3d5-6c51e3fad7c8.png" />
  </div>
 <br>
 
-## ESTRUTURA
+
+### EXPECTATIVA
+
+
 
 #### 1. Diagrama UML (Unified Modeling Language) - Linguagem de Notação ou Linguagem de Modelagem Unificada do Projeto
 <br>
@@ -107,54 +105,6 @@ Achamos que, para um melhor entendimento, é importante mostar esta idéia geral
  </div>
 <br>
 <h1>
-
-#### 3. ESTRUTUTRA DO PROGRAMA NA IDE ECLIPSE PADRÃO MVC (MODEL-VIEW-CONTROLLER)
-<br>
-
-Algumas definições do padrão MVC
-
-* Controller - camada intermediária entre a camada de apresentação (swagger) e a camada de negócios (model))
-* enums - conjunto fixo de valores (SPEED e MTB)
-* model - classe de modelos de dados 
-* dto (usado como parte da infra da aplicacao. Serve para especificar qual banco será usado)
-* repository - Trabalha como uma porta de acesso a outra camada, algumas vezes com a dto
-* LocacaoCustomRepository - usando para fazer as pesquisas no banco de dados através de nativeQuery
-* NativeQuery - é um processo que tem como objetivo executar o código SQL em uma consulta
-* Service - responsável pela lógica do negócio na aplicacao, é aqui é que quando ocorre a locacao, faço a diminuiçao da quantidade do item do estoque
-<br>
-### Estrutura
-      com.mjv.projetofinal
-        controller
-          ClienteController
-          EquipamentoController
-          LocacaoController
-      enums
-        TipoEquipamento
-      model
-        cadastro 
-          Cliente
-          Endereco
-          Equipamento
-        locacao 
-          dto
-            LocacaoListagem
-            LocacaoLIstagem2
-          Locacao
-          LocacaoItem
-      repository
-        ClienteRepository
-        EndereçoRepository
-        EquipamentoRepository
-        LocacaoRepository
-        LocacaoCustomRepository 
-        LocacaoItemRepository
-        LocacaoRepository
-      service
-        LocacaoService
-      MjvProjetoFinalApplication.java
-
-
-
 
 #### 3. Cadastro de Equipamento (Bike)
 
@@ -176,8 +126,7 @@ Algumas definições do padrão MVC
 <div align="center">
   <img src="https://user-images.githubusercontent.com/96257601/169022749-5079619b-801d-41fa-a738-570728714cd2.jpg" width="200px" />
  </div>
- <br>
-3.3. Incluir outros equipamentos via SQL no banco de dados de equipamento.
+3.3. Incluir outros equipamentos via banco de dados.
 
 
 ```
@@ -200,46 +149,17 @@ VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',3,200);
 ```
 {
   "id": 0,
-  "cpf": "25280369063",
-  "nome": "KATSUKI BAKUGO",
-  "telefone": "98912345678",
+  "cpf": "43743743791",
+  "nome": "MANOEL DE MARIA",
+  "telefone": "98987456321",
   "endereco": {
     "id": 0,
-    "logradouro": "Rua Anapurus, 20, Jardim RENASCENCA II",
+    "logradouro": "RUA ANAPURUS, 20, JARDIM RENASCENCA II",
     "cidade": "SAO LUIS",
     "estado": "MA",
     "cep": "65075450"
   }
 }
-
-{
-  "id": 0,
-  "cpf": "49924023056",
-  "nome": "SHOTO TODOROKI",
-  "telefone": "98981427777",
-  "endereco": {
-    "id": 0,
-    "logradouro": "Rua da Saavedra, n.01, Centro",
-    "cidade": "SAO LUIS",
-    "estado": "MA",
-    "cep": "65010620"
-  }
-}
-
-{
-  "id": 0,
-  "cpf": "25280369063",
-  "nome": "IZUKU MIDORIYA",
-  "telefone": "98987654112",
-  "endereco": {
-    "id": 0,
-    "logradouro": "Rua Apolo, 350, Jardim Renascença I",
-    "cidade": "SAO LUIS",
-    "estado": "MA",
-    "cep": "65075450"
-  }
-}
-
 ```
 
 4.2. Fazer apresentação do RUD (Read, Update e Delete) verificando que as tabelas de endereço e cliente estao ligadas via cascade, ou seja, o que fizer no banco de cliente fará no banco de endereço.
@@ -250,6 +170,27 @@ VALUES ('MTB','2021','SPECIALIZED','SRAM GX EAGLE',3,200);
 <br>
 4.3. Incluir via banco de dados clientes do boku no hero academy. 
 
+4.3.1 - Primeiro os endereços, eles moram em São Luís :)
+
+```
+INSERT INTO public.endereco (logradouro,cidade,estado,cep)
+	VALUES ('Praça São João, n.10, Centro ','São Luís ','MA','65010610');
+INSERT INTO public.endereco (logradouro,cidade,estado,cep)
+	VALUES ('Rua da Saavedra, n.01, Centro ','São Luís ','MA','65010620');
+INSERT INTO public.endereco (logradouro,cidade,estado,cep)
+	VALUES ('Rua Apolo, 350, Jrdm Renascença ','São Luís ','MA','65075-680');
+```
+
+4.3.2 - Agora os clientes ;)
+
+```
+INSERT INTO public.cliente (cpf,nome,telefone,endereco_id)
+	VALUES ('25280369063','KATSUKI BAKUGO','98912345678',11);
+INSERT INTO public.cliente (cpf,nome,telefone,endereco_id)
+	VALUES ('25280369063','SHOTO TODOROKI','98912345678',12);
+INSERT INTO public.cliente (cpf,nome,telefone,endereco_id)
+	VALUES ('25280369063','IZUKU MIDORIYA','98912345678',13);
+```
 
 <h1>
 
