@@ -9,9 +9,9 @@
 # MJV Projeto Final
 </h1>
 
-#### Repositório contendo o código fonte do projeto final da School.
+##### Repositório contendo o código fonte do projeto final da School.
 <h2>
-Locação BIKE 
+O DESAFIO
 </h2>
 
 ### Obrigatoriedades:
@@ -36,18 +36,11 @@ Disponibilizar o link do github do projeto bem descrito quanto às funcionalidad
 
 #####  Alunos participantes (Ordem Alfabética) / Github
 
-- [Bruno Alessandro](https://github.com/BrunoAMieli)
-
 - [Fábio Ericeira](https://github.com/FabioEriceira)
-
-- [Gabriel Cruz](https://github.com/ProbBC)
 
 - [Paulo Ricardo](https://github.com/Paulo-Ultra)
 
 - [Renato Gonçalves](https://github.com/Renato-RJ)
-
-
-
 
 ##### Tecnologias
 
@@ -62,18 +55,28 @@ Disponibilizar o link do github do projeto bem descrito quanto às funcionalidad
 - **Eclipse** — IDE utilizada para estudo da linguagem Java
 - **Papyrus** — Ferramenta de edição gráfica para UML integrada ao Eclipse
 
-
 ##### Apresentação
 
-1. Diagrama UML (Linguagem de Modelagem) de Classes do projeto
-2. Diagrama ER (Entidade de Relacionamento) dos Bancos de dados
-3. Cadastro de Equipamentos (bikes)
-4. Cadastro de Cliente com seus Endereços
-5. Locação das Bikes com seus pedidos
-6. Pesquisas das informações nos bancos de dados.
+1. O projeto
+2. Diagrama UML (Linguagem de Modelagem) de Classes do projeto
+3. Diagrama ER (Entidade de Relacionamento) dos Bancos de dados
+4. Cadastro de Equipamentos (bikes)
+5. Cadastro de Cliente com seus Endereços
+6. Locação das Bikes com seus pedidos
+7. Pesquisas das informações nos bancos de dados.
 
 <br>
 <h1>
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/96257601/169041303-50e84b75-1bd9-49dd-ad14-93d90c148398.png" width="1200px" />
+ </div>
+<br>
+
+
+
+
+
 
 #### 1. Diagrama UML (Unified Modeling Language) - Linguagem de Notação ou Linguagem de Modelagem Unificada do Projeto
 <br>
