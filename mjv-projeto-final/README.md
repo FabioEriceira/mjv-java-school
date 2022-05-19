@@ -1,5 +1,3 @@
-![Pesquisa_detalhes](https://user-images.githubusercontent.com/96257601/169363351-85ea64f4-d065-4d83-accc-d83068045f08.png)
-![Pesquisa_locacao](https://user-images.githubusercontent.com/96257601/169363376-8ad1eed4-b439-4e0d-a622-5c30dd173cf1.png)
 <h1 align="center">
 <br>
   <a href="https://www.mjvinnovation.com/pt-br/quem-somos/">
@@ -277,19 +275,20 @@ OBS. Iremos informar:
  * Subtrair da quantidade do estoque do equipamento.(cada equipamento locado é unico, então fará uma subtração de uma unidade).
 
 ##### JSON Cadastro
+
 ```
 {
   "id": 0,
-  "dataRetirada": "2022-05-18T11:47:35.201Z",
+  "dataRetirada": "2022-05-19T11:47:35.201Z",
   "dataDevolucao": "2022-05-20T11:47:35.201Z",
-  "clienteId": 13,
+  "clienteId": 1,
   "valorFinal": 0,
   "itens": [
     {
       "id": 0,
-      "equipamentoId": 16,
+      "equipamentoId": 1,
       "qtdDiasLocacao": 0,
-      "subtotal": 200
+      "subtotal": 50
     }
   ]
 }
@@ -300,6 +299,65 @@ OBS. Iremos informar:
 2. A inclusão de inclusão de itens;
 3. O decremento do estoque do item locado.
 
+```
+{
+  "id": 0,
+  "dataRetirada": "2022-05-19T11:47:35.201Z",
+  "dataDevolucao": "2022-05-20T11:47:35.201Z",
+  "clienteId": 2,
+  "valorFinal": 0,
+  "itens": [
+    {
+      "id": 0,
+      "equipamentoId": 2,
+      "qtdDiasLocacao": 0,
+      "subtotal": 200
+    },
+    {
+      "id": 0,
+      "equipamentoId": 3,
+      "qtdDiasLocacao": 0,
+      "subtotal": 100
+    },
+  ]
+}
+
+
+{
+  "id": 0,
+  "dataRetirada": "2022-05-19T11:47:35.201Z",
+  "dataDevolucao": "2022-05-22T11:47:35.201Z",
+  "clienteId": 3,
+  "valorFinal": 0,
+  "itens": [
+    {
+      "id": 0,
+      "equipamentoId": 2,
+      "qtdDiasLocacao": 0,
+      "subtotal": 200
+    },
+    {
+      "id": 0,
+      "equipamentoId": 3,
+      "qtdDiasLocacao": 0,
+      "subtotal": 100
+    },
+    {
+      "id": 0,
+      "equipamentoId": 4,
+      "qtdDiasLocacao": 0,
+      "subtotal": 200
+    },
+  ]
+}
+
+
+```
+
+
+
+
+
 <h1>
 
 #### 7. Pesquisas das informações nos bancos de dados.
@@ -307,11 +365,13 @@ OBS. Iremos informar:
 	
 
 
-1. Se eu quiser saber de uma determinada locacao qual foi o valor total e qual foi o cliente?
-	
+7.1. Se eu quiser saber de uma determinada locacao qual foi o valor total e qual foi o cliente?
+
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/96257601/169363351-85ea64f4-d065-4d83-accc-d83068045f08.png" width="200px" />
+  <img src="https://user-images.githubusercontent.com/96257601/169363376-8ad1eed4-b439-4e0d-a622-5c30dd173cf1.png" width="1000px" />
 </div>
+
+
 	
 
 
@@ -324,13 +384,12 @@ where li.id = 1;
 
 ```
 
-2. E se eu quiser saber quais os equipamentos desta locacao, seus valores e data da retirada?
+7.2. E se eu quiser saber quais os equipamentos desta locacao, seus valores e data da retirada?
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/96257601/169363376-8ad1eed4-b439-4e0d-a622-5c30dd173cf1.png" width="200px" />
+  <img src="https://user-images.githubusercontent.com/96257601/169363351-85ea64f4-d065-4d83-accc-d83068045f08.png" width="1000px" />
 </div>
 
-	
 
 	
 ```
@@ -342,7 +401,7 @@ where li.id = 1;
 
 ```
 
-3. Será que tem como juntar mais informações? Tipo desta locacao, quais os equipamentos, quais os seus valores, quem locou, o seu endereço data de retirada e devolucao e valor final, será que é possível?
+7.3. Será que tem como juntar mais informações? Tipo desta locacao, quais os equipamentos, quais os seus valores, quem locou, o seu endereço data de retirada e devolucao e valor final, será que é possível?
 
 ```
 select  li.locacao_id, e.tipo_equipamento, e.grupo, li.subtotal, c.nome, e2.logradouro, l.data_retirada, l.data_devolucao , l.valor_final  
